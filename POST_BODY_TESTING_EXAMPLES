@@ -1,0 +1,109 @@
+//POSTING BODY FOR ADDING A CANDIDATE
+{
+  "post": {
+      "firstName": "Sally",
+      "lastName": "Morris",
+      "email": "smorris@wellesley.edu",
+      "serviceType": "homecleaning",
+      "points": 3,
+      "percentage": 100,
+      "candidateQuestions": [
+          {
+              "Q1": {
+                  "questionIndex": "1",
+                  "questionText": "What would you do about cleaning cobwebs and dusting?",
+                  "answers": {
+                      "1": "Don't clean any cobwebs becaue that's too detailed, but I do some dusting",
+                      "2": "Don't clean any cobwebs or dust because it takes too long",
+                      "3": "Clean cobwebs I can reach, and dust all surfaces"
+                  },
+                  "answerText": "Clean cobwebs I can reach, and dust all surfaces"
+              }
+          },
+          {
+              "Q2": {
+                  "questionIndex": "2",
+                  "questionText": "What is the effect of oven cleaner on kitchen countertops?",
+                  "answers": {
+                      "1": "No effect",
+                      "2": "Enhances shine",
+                      "3": "Leaves streak marks",
+                      "4": "Stains surface"
+                  },
+                  "answerText": "Stains surface"
+              }
+          },
+          {
+              "Q3": {
+                  "questionIndex": "3",
+                  "questionText": "In what order would you clean these items in the kitchen?",
+                  "answers": {
+                      "1": "Clean the floors; wash the dishes; wipe down the countertops",
+                      "2": "Wash the dishes; wipe down the countertops; clean the floors",
+                      "3": "Wipe down the countertops; wash the dishes; clean the floors",
+                      "4": "Wash the dishes; clean the floors; wipe down the countertops"
+                  },
+                  "answerText": "Wash the dishes; wipe down the countertops; clean the floors"
+              }
+          }
+      ],
+      "candidateAnswers": {
+          "1": {
+              "selected": "Clean cobwebs I can reach, and dust all surfaces",
+              "points": 1
+          },
+          "2": {
+              "selected": "Stains surface",
+              "points": 1
+          },
+          "3": {
+              "selected": "Wash the dishes; wipe down the countertops; clean the floors",
+              "points": 1
+          }
+      }
+  }
+}
+
+//POSTING BODY FOR ADDING MUST BE MODELED IN THIS FORMAT
+{
+  "post": {
+      "questionText": "How do you mop the floor?",
+      "answers": {
+          "1": "Vacuum first, and then mop",
+          "2": "Mop first, and then vacuum",
+          "3": "Mop without vacuuming"
+      },
+      "answerText": "Vacuum first, and then mop"
+  }
+}
+
+//POSTING BODY FOR UPDATING QUESTIONS MUST BE MODELED IN THIS FORMAT
+{
+  "post": {
+      "oldQuestion": {
+          "homecleaning": {
+              "Q3": {
+                  "questionIndex": "3",
+                  "questionText": "In what order would you clean these items in the kitchen?",
+                  "answers": {
+                      "1": "Clean the floors; wash the dishes; wipe down the countertops",
+                      "2": "Wash the dishes; wipe down the countertops; clean the floors",
+                      "3": "Wipe down the countertops; wash the dishes; clean the floors",
+                      "4": "Wash the dishes; clean the floors; wipe down the countertops"
+                  },
+                  "answerText": "Wash the dishes; wipe down the countertops; clean the floors"
+              }
+          }
+      },
+      "newQuestionBody": {
+          "questionText": "In what order would you clean these items in the kitchen?",
+          "answers": {
+              "1": "Clean the floors, wash the dishes, and wipe down the countertops",
+              "2": "Wash the dishes, wipe down the countertops, and clean the floors",
+              "3": "Wipe down the countertops, wash the dishes, and clean the floors",
+              "4": "Wash the dishes, clean the floors, and wipe down the countertops"
+          },
+          "answerText": "Wash the dishes, wipe down the countertops, and clean the floors"
+      }
+  }
+}

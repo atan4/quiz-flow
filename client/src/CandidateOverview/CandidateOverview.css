@@ -1,0 +1,65 @@
+.candidate-overview {
+  color: #434343;
+  margin: 20px 0 0 30px;
+}
+
+.candidate-name-email {
+  margin-left: 10px
+}
+
+.candidate-name-email h3,
+.candidate-name-email h2 {
+  margin: 0;
+}
+
+.candidate-name {
+  font-size: 30px;
+  color: #434343;
+  letter-spacing: 1px;
+}
+
+.candidate-overview-header {
+  display: flex;
+  align-items: center;
+}
+
+.score-box {
+  margin: 5px;
+  width: 110px;
+  height: 75px;
+  display: flex;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #00D0F1;
+  border-radius: 5px;
+}
+
+.question-header.overview {
+  font-size: 12px;
+}
+
+.question-header .question {
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.question-header .response {
+  font-size: 14px;
+}
+
+.question-response-wrapper {
+  max-width: 800px;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #00D0F1;
+}
+
+.question {
+  color: #d34545
+}
+
+.question.correct {
+  color: #4bd800;
+}

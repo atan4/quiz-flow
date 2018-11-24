@@ -1,0 +1,58 @@
+.nav-bar {
+  display: block;
+}
+
+.dashboard {
+  height: calc(100vh - 80px);
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.candidate-wrapper {
+  overflow-y: scroll;
+  background: #EBF5F8;
+  width: 300px;
+  min-width: 300px;
+  display: block;
+  border-top: 1px solid #bebebe;
+}
+
+.candidate-info {
+  width: calc(100vw - 300px);
+  background: #EBF5F8;
+  border: 1px solid #bebebe;
+}
+
+.candidate {
+  cursor: pointer;
+  font-size: 12px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #bebebe;
+}
+
+.candidate .name,
+.candidate .score {
+  font-weight: 400;
+}
+
+.candidate .name {
+  overflow: hidden;
+  padding-left: 10px;
+  width: 75%;
+  text-overflow: ellipsis;
+  color: #434343;
+}
+
+.candidate .score {
+  text-align: center;
+  width: 25%;
+  font-weight: 700;
+  color: #434343;
+}
+
+.candidate:hover {
+  background: rgb(219, 231, 235);
+}
