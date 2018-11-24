@@ -221,16 +221,13 @@ class Quiz extends Component {
       <div className="Quiz">
         <nav className="nav-bar">
           <div className="navigation-logo">
-            <img
-              src="https://cache-landingpages.services.handy.com/assets/pages/region/handy_logo-e5d858d96595ec001c5268a2d7a0f91800da2c7c2f963a5307154917289c347a.svg"
-              alt="Handy logo"
-            />
+            {/* insert logo here */}
           </div>
         </nav>
         <div className={classnames("quiz", { prequiz: !submitPrequiz })}>
           {!submitPrequiz && (
             <div className="quiz-form">
-              <h1>Sign up to be a professional with Handy!</h1>
+              <h1>Sign up to be a professional!</h1>
               <div className="quiz-input-wrapper">
                 <input
                   className={classnames("quiz-input first-name", {
